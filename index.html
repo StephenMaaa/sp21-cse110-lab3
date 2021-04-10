@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="geisel.jpeg" sizes="16x16" type="image/jpeg">
+        <title>My Journal</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="http://tritonlink.ucsd.edu">TritonLink</a> |
+                <a href="https://canvas.ucsd.edu">Canvas</a> |
+                <a href="https://slack.com/intl/en-hk/">Slack</a> |
+                <a href="https://mail.google.com">Gmail</a>
+            </nav>
+            <h1>Welcome to my journal</h1>
+            <!-- <img src="geisel.jpeg" alt="Geisel"> -->
+        </header>
+        <hr>
+        <main>
+            <h2>Main Content</h2>
+            <p>This page is to detail my journals of the past three days, mainly focus on how to study online. </p>
+
+            <section>
+                <h2>Journals</h2>
+            
+                <details>
+                    <summary><strong>April 8</strong></summary>
+                    <div>
+                        <ol>
+                            <li>Take <b>CSE 151B</b></li>
+                            <li>Take <b>CSE 110</b></li>
+                            <li><i>Postpone</i> the <b>CSE 110</b> lab (bit lazy)</li>
+                            <li>Watch Unreal engine tutorial</li>
+                        </ol>
+                    </div>
+
+                </details>
+                <details>
+                    <summary><strong>April 9</strong></summary>
+                    <div>
+                        <ol>
+                            <li>Take <b>CSE 151B</b> discussion</li>
+                            <li>Write posts on <b>PHIL 27</b> discussion board</li>
+                            <li>Listen music (<i>not</i> in my study mode) <br>
+                                Rick Roll <br>
+                                <audio controls>
+                                    <source src="http://demo.twilio.com/docs/classic.mp3" type="audio/mpeg">
+                                    <p>Your browser doesn't support HTML5 audio.</p>
+                                </audio>
+                            </li>
+                            <li>Watch some video on Youtube <br>
+                                Here comes rick roll again <br>
+                                <video controls width="250">
+                                    <source src="video.mp4" type="video/mp4">
+                                    Sorry, your browser doesn't support embedded videos.
+                                </video>
+                            </li>
+                        </ol>
+                    </div>
+                </details>
+                <details>
+                    <summary><strong>April 10</strong></summary>
+                    <div>
+                        <ol>
+                            <li>Do the CSE 110 lab</li>
+                            <li>Do the CSE 151B hw</li>
+                            <li>Go to a restaurant with my parents</li>
+                            <li>Take the CSE 110 quiz <span>(<em>pending</em>)</span></li>
+                            <li>Meme time<br>
+                                <img src="image.png" width="260" height="260" alt="ml">
+                            </li>
+                        </ol>
+                    </div>
+                </details>
+            </section>
+        </main>
+    
+
+        <hr>
+        Form: 
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+             <li>
+                <label for="ice-cream-choice">Choose your college:</label>
+                <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+                <datalist id="ice-cream-flavors">
+                    <option value="Warren">
+                    <option value="Muir">
+                    <option value="Marshall">
+                    <option value="Revelle">
+                    <option value="ERC">
+                    <option value="Sixth">
+                    <option value="Seventh">
+                </datalist>
+             </li>
+             <li>
+                <label>Choose your academic year:</label>
+                <select>
+                    <option value="">--Please choose an option--</option>
+                    <option>Freshman</option>
+                    <option>Sophomore</option>
+                    <option>Junior</option>
+                    <option>Senior</option>
+                </select>
+             </li>
+             <li>
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="user_name">
+             </li>
+             <li>
+               <label for="mail">E-mail:</label>
+               <input type="email" id="mail" name="user_email">
+             </li>
+             <li>
+                <fieldset>
+                    <legend>Your feeling today: </legend>
+                
+                    <input type="radio" id="kraken" name="monster">
+                    <label for="kraken">Execellent</label><br/>
+                
+                    <input type="radio" id="sasquatch" name="monster">
+                    <label for="sasquatch">Good</label><br/>
+                
+                    <input type="radio" id="mothman" name="monster">
+                    <label for="mothman">Bad</label>
+                </fieldset>
+             </li>
+             <li>
+               <label for="msg">Message:</label>
+               <textarea id="msg" name="user_message"></textarea>
+             </li>
+            </ul>
+            <button type="button">
+                Submit
+            </button>
+        </form>
+
+        <footer>
+            For CSE 110 lab 2
+        </footer>    
+    </body>
+</html>
