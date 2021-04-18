@@ -19,7 +19,7 @@ ul.nav-ul li a {
     text-decoration: none;
 }
 
-.box {
+div.box {
     margin-top: 1cm;
     margin-bottom: 1cm;
     margin-left: 1cm;
@@ -34,22 +34,23 @@ ul.nav-ul li a {
 }
   
   
-.box h1 {
+div > h1 {
     text-align: center;
     background-color: #FFFFFF;
     color: rgb(0, 0, 0);
     font-size: 60px;
 }
 
-div.content h2 {
+/* div.content h2 {
     font-size: 1cm;
-}
-div.content p {
+} */
+
+div.content h2 ~ p {
     font-size: 1.2rem;
     line-height: 0.2em;
 }
 
-section.journal h2 {
+div.content h2, section.journal h2 {
     font-size: 0.3937in;
 }
 
@@ -78,7 +79,7 @@ summary {
     position: relative;
 }
 
-.box3 {
+#box3 {
     margin: auto;
     border: 2px solid;
     border-color: hsl(207.9,79.2%,20.8%);
@@ -133,6 +134,15 @@ a:active {
     src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 }
 
-html {
+* {
     font-family: 'Montserrat', sans-serif;;
+}
+
+img[alt="ml"] {
+    width: 260px;
+    height: 260px;
+}
+
+blockquote + div {
+    text-align: center;
 }
