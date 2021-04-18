@@ -1,0 +1,138 @@
+/* header nav bar style */
+ul.nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;   
+  }
+  
+ul.nav-ul li {
+    float: left;
+}
+  
+ul.nav-ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.box {
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    border: 10px solid lightskyblue;
+    border-radius: 2em;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+    position: static;
+}
+  
+  
+.box h1 {
+    text-align: center;
+    background-color: #FFFFFF;
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+}
+
+div.content h2 {
+    font-size: 1cm;
+}
+div.content p {
+    font-size: 1.2rem;
+    line-height: 0.2em;
+}
+
+section.journal h2 {
+    font-size: 0.3937in;
+}
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-size: 3ex;
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+.box2 {
+    margin: 1cm;
+    background-color: #567895;
+    border: 5px solid;
+    border-style: double;
+    border-color: hsl(207.9,79.2%,20.8%);
+    border-width: 1cm;
+    color: #fff;
+    padding: 0.5em;
+    position: relative;
+}
+
+.box3 {
+    margin: auto;
+    border: 2px solid;
+    border-color: hsl(207.9,79.2%,20.8%);
+    border-width: 0.2cm;
+    padding: 0.2em;
+}
+
+button:hover {
+    color: hotpink;
+
+}
+
+a:active {
+    color: blue;  
+}
+
+.flex-container {
+    display: flex;
+    background-color: whitesmoke;
+}
+  
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.grid-container {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+  
+.grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (max-width: 1000px) {
+    p {background-color: darkblue;}
+}
+
+@font-face {
+    font-family: "myFont";
+    src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;;
+}

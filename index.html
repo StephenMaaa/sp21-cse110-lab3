@@ -4,28 +4,40 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="geisel.jpeg" sizes="16x16" type="image/jpeg">
+        <link rel="stylesheet" href="style.css">
         <title>My Journal</title>
+        <style>
+            .form {
+                text-align: center;
+                text-decoration: solid;
+                color: wheat;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <nav>
-                <a href="http://tritonlink.ucsd.edu">TritonLink</a> |
-                <a href="https://canvas.ucsd.edu">Canvas</a> |
-                <a href="https://slack.com/intl/en-hk/">Slack</a> |
-                <a href="https://mail.google.com">Gmail</a>
-            </nav>
-            <h1>Welcome to my journal</h1>
+            <ul class="nav-ul">
+                <li ><a href="http://tritonlink.ucsd.edu">TritonLink</a></li> 
+                <li><a href="https://canvas.ucsd.edu">Canvas</a></li> 
+                <li><a href="https://slack.com/intl/en-hk/">Slack</a></li> 
+                <li><a href="https://mail.google.com">Gmail</a></li>
+            </ul>
+            <div class="box">
+                <h1>Welcome to my journal</h1>
+            </div>
             <!-- <img src="geisel.jpeg" alt="Geisel"> -->
-        </header>
+        </header> 
+        
         <hr>
         <main>
-            <h2>Main Content</h2>
-            <p>This page is to detail my journals of the past three days, mainly focus on how to study online. </p>
-
-            <section>
+            <div class="content">
+                <h2>Main Content</h2>
+                <p>This page is to detail my journals of the past three days, mainly focus on how to study online. </p>
+            </div>
+            <section class="journal">
                 <h2>Journals</h2>
             
-                <details>
+                <details open>
                     <summary><strong>April 8</strong></summary>
                     <div>
                         <ol>
@@ -37,30 +49,47 @@
                     </div>
 
                 </details>
-                <details>
+                <details open>
                     <summary><strong>April 9</strong></summary>
                     <div>
                         <ol>
                             <li>Take <b>CSE 151B</b> discussion</li>
-                            <li>Write posts on <b>PHIL 27</b> discussion board</li>
-                            <li>Listen music (<i>not</i> in my study mode) <br>
+                            <li>Write posts on <b>PHIL 27</b> discussion board</li> 
+                            <!-- <li>Listen music (<i>not</i> in my study mode) <br>
                                 Rick Roll <br>
-                                <audio controls>
+                                <audio controls style="display: inline-block;">
                                     <source src="http://demo.twilio.com/docs/classic.mp3" type="audio/mpeg">
                                     <p>Your browser doesn't support HTML5 audio.</p>
                                 </audio>
                             </li>
                             <li>Watch some video on Youtube <br>
                                 Here comes rick roll again <br>
-                                <video controls width="250">
+                                <video controls width="250" style="display: block; min-width: 260; min-height: 260;">
                                     <source src="video.mp4" type="video/mp4">
                                     Sorry, your browser doesn't support embedded videos.
                                 </video>
-                            </li>
+                            </li> -->
                         </ol>
+                        <div class="flex-container">
+                            <div class="flex-item">
+                                Listen music (<i>not</i> in my study mode) <br>
+                                Rick Roll <br>
+                                <audio controls style="display: inline-block;">
+                                    <source src="http://demo.twilio.com/docs/classic.mp3" type="audio/mpeg">
+                                    <p>Your browser doesn't support HTML5 audio.</p>
+                                </audio>
+                            </div>
+                            <div class="flex-item">
+                                Watch some video on Youtube <br>
+                                Here comes rick roll again <br>
+                                <video controls width="250" style="display: block; min-width: 260; min-height: 260;">
+                                    <source src="video.mp4" type="video/mp4">
+                                    Sorry, your browser doesn't support embedded videos.
+                                </video>
+                            </div>
                     </div>
                 </details>
-                <details>
+                <details open>
                     <summary><strong>April 10</strong></summary>
                     <div>
                         <ol>
@@ -68,18 +97,23 @@
                             <li>Do the CSE 151B hw</li>
                             <li>Go to a restaurant with my parents</li>
                             <li>Take the CSE 110 quiz <span>(<em>pending</em>)</span></li>
-                            <li>Meme time<br>
-                                <img src="image.png" width="260" height="260" alt="ml">
-                            </li>
+                            <!-- <li>Meme time<br>
+                                <img src="image.png" style="width: 260px; height: 260px;" alt="ml">
+                            </li> -->
                         </ol>
+                    </div>
+                    Meme time! 
+                    <div class="grid-container">
+                        <div class="grid-item"><img src="image.png" style="width: 260px; height: 260px;" alt="ml"></div>
+                        <div class="grid-item"><img src="bug.jpeg" style="width: 260px; height: 260px;" alt="bug"></div>
                     </div>
                 </details>
             </section>
         </main>
-    
 
         <hr>
-        Form: 
+        <div class="box2">
+            <span class="form" style="font-size: 1cm;">Form:</span> 
         <form action="/my-handling-form-page" method="post">
             <ul>
              <li>
@@ -129,13 +163,16 @@
              </li>
              <li>
                <label for="msg">Message:</label>
-               <textarea id="msg" name="user_message"></textarea>
+               <div class="box3">
+                   <textarea id="msg" name="user_message"></textarea>
+               </div>
              </li>
             </ul>
             <button type="button">
                 Submit
             </button>
-        </form>
+            </form>
+        </div>
 
         <footer>
             For CSE 110 lab 2
